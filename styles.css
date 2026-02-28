@@ -1,0 +1,304 @@
+/* CSSde yorum satırları */
+
+h3 {
+    text-align: center;
+    color: brown;
+    text-decoration: double;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+p {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+
+.pinline {
+    display: inline;
+    margin-left: 320px;
+}
+
+.pcenter {
+    text-align: center;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+nav {
+
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+.div1 {
+    display: block;
+    margin: auto;
+    background-image: url(/images/grs2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.div2 {
+    padding: 10px;
+    display: inline-block;
+    /* div vb. ortalamak için bu iki satır lazım! */
+    margin-left: 120px;
+    margin-right: 120px;
+    opacity: 0, 8;
+    background-color: antiquewhite;
+    height: 350px;
+    width: 30%;
+    border: 2px solid salmon;
+}
+
+
+main p {
+    color: brown;
+}
+
+/* ikisi de aynı anlama gelir */
+aside>p {
+    color: blue;
+}
+
+i {
+    font-size: medium;
+}
+
+/*Linkler ve renkleri*/
+a:link.link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(119, 119, 255);
+}
+
+a:hover.link {
+    color: rgb(17, 17, 71);
+}
+
+a:active.link {
+    color: red;
+}
+
+/* Liste ikonlarını değiştirme */
+ul {
+    list-style-type: armenian;
+}
+
+/* tablo biçimlendirme*/
+#Tablo1 {
+    width: 50%;
+    text-align: center;
+
+}
+
+#Tablo1 th,
+td {
+    padding: 15px;
+}
+
+#Tablo1,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* çift kenarlığı engellemek için*/
+}
+
+#Tablo1 th {
+    background-color: rgb(208, 177, 136);
+}
+
+#Tablo1 tr:nth-child(even) {
+    /* tablo1 de bulunan tüm satırlardan çift numaraya sahip olanlar*/
+    background-color: rgb(246, 230, 209);
+}
+
+#Tablo1 tr:hover {
+    background-color: rgb(161, 134, 99);
+}
+
+#Tablo1 tr:active {
+    background-color: rgb(105, 88, 65);
+}
+
+#Tablo1 #s3 {
+    width: 60%;
+}
+
+.overflow {
+    background-color: rgb(255, 237, 218);
+    width: 20%;
+    height: 200px;
+    padding: 15px;
+    border: 10px solid rgb(255, 207, 164);
+    margin: 20px;
+    overflow: auto;
+}
+
+/*Dikey navbar(menü çubuğu ) yapımı*/
+#list2 {
+    list-style-type: none;
+    width: 15%;
+    height: 150px;
+}
+
+#list2 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#list2 li {
+    background-color: rgb(233, 233, 169);
+    padding: 15px;
+}
+
+#list2 li:hover {
+    background-color: rgb(213, 116, 116);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#liste2 li:active {
+    background-color: rgb(184, 103, 103);
+
+}
+
+#list2 li:nth-child(1) {
+    background-color: rgb(184, 103, 103);
+}
+
+a #list2i {
+
+    color: black;
+    padding-left: -20;
+    padding-right: 10px;
+}
+
+/*yatay navbar yapımı*/
+#list3 {
+    list-style-type: none;
+    width: 50%;
+    height: 50px;
+    background-color: rgb(233, 233, 169);
+}
+
+#list3 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#list3 li {
+    display: inline-block;
+    /*!!yaptığımız tek değişiklik bu!!*/
+    background-color: rgb(233, 233, 169);
+    padding: 15px;
+    margin-left: -6px;
+    margin-right: 2px;
+
+}
+
+#list3 li a:hover {
+    color: rgb(213, 116, 116);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#liste3 li:active {
+    background-color: rgb(184, 103, 103);
+
+}
+
+#list3 #list3-1 {
+    background-color: rgb(184, 103, 103);
+
+}
+
+a #list3i {
+
+    padding-left: -20;
+    padding-right: 10px;
+}
+
+/*alt dropdown menü1*/
+#contacts-div {
+    position: absolute;
+    display: none;
+    /*görünmez olsun*/
+    margin-top: 14px;
+    margin-left: -32px;
+}
+
+#contacts-div li {
+    display: block;
+}
+
+#contacts-li:hover #contacts-div {
+    display: block;
+}
+
+/*alt dropdown menü2*/
+#whatsapp-div {
+    position: absolute;
+    display: none;
+    /*görünmez olsun*/
+    margin-left: 50px;
+    margin-top: -20px;
+    width: 250px;
+    text-align: left;
+}
+
+#whatsapp-div li {
+    display: block;
+}
+
+#whatsapp-li:hover #whatsapp-div {
+    display: block;
+}
+
+/*alt dropdown menü3*/
+#profile-div {
+    position: absolute;
+    display: none;
+    margin-top: 14px;
+    margin-left: -32px;
+}
+
+#profile-div li {
+    display: block;
+}
+
+#profile-id:hover #profile-div {
+    display: block;
+}
