@@ -1,0 +1,374 @@
+/* Genel Sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --primary-purple: #5d3bee;
+    /* Görseldeki ana mor renk */
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --bg-gray: #f8f9fa;
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Header Tasarımı */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo img {
+    /*sayfa başı logo*/
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+/*nav tasarımı*/
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    /* liste elemanları arası mesafe*/
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4829cf;
+}
+
+/*nav yanı div*/
+.social-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*resimlerin üzerine geldiğinde büyümesi için*/
+.acc-icon img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* Hero Bölümü Yerleşimi */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1.2;
+}
+
+.hero-text h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.exp-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.purple-text {
+    color: var(--primary-purple);
+    font-size: 40px;
+}
+
+.description {
+    font-size: 18px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.description strong {
+    color: var(--text-dark);
+}
+
+/* Form Tasarımı */
+.cta-area {
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: fit-content;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cta-area input {
+    padding: 18px 25px;
+    border: 1px solid #eee;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+}
+
+.cta-area button {
+    background: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-area button:hover {
+    background: #4829cf;
+}
+
+/* Görsel ve Dekorasyonlar */
+.hero-visual {
+    flex: 1;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 0 0 100px 0;
+    /*Hafifasimetrikkesim*/
+    filter: brightness(1.0);
+    -webkit-filter: brightness(1.0);
+}
+
+
+/* Mobil Uyumluluk */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .exp-wrapper {
+        justify-content: center;
+    }
+
+    .cta-area {
+        margin: 0 auto;
+    }
+}
+
+/*özgeçmiş.html dosyası*/
+.body-özg {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-cv {
+    display: flex;
+    justify-content: center;
+    /* Yatayda ortalar */
+    align-items: center;
+    /* Dikeyde ortalar */
+    min-height: 100vh;
+    /* Ekran yüksekliğinin tamamını kaplar */
+    padding: 5px;
+    /* Kenarlardan çok az nefes alma payı */
+}
+
+.cv-container {
+    width: 90%;
+    /* Ekranın %90 genişliğini kaplasın */
+    height: 90vh;
+    /* Ekranın %90 yüksekliğini kaplasın */
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+    /* Derinlik katar */
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.cv-container embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mobil cihazlar için tam ekran yapalım */
+@media (max-width: 768px) {
+    .pdf-wrapper {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .cv-section {
+        padding: 0;
+    }
+}
+
+/*iletişim.html dosyası*/
+.body-ilt {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-ilt {
+    display: flex;
+    justify-content: center;
+    /* Yatayda ortalar */
+    align-items: center;
+    /* Dikeyde ortalar */
+    min-height: 100vh;
+    /* Ekran yüksekliğinin tamamını kaplar */
+    padding: 5px;
+    /* Kenarlardan çok az nefes alma payı */
+}
+
+.contact-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Yatayda ortalar */
+    align-items: center;
+    /* Dikeyde ortalar */
+    background-color: #f4f7ff;
+    /* Çok hafif, ferah bir arka plan */
+    padding: 20px;
+}
+
+.contact-card-v2 {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    /* Kartın genişliğini sınırladık, daha "kart" gibi dursun diye */
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.profile-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 80px;
+    box-shadow: 0 10px 20px rgba(93, 59, 238, 0.2);
+}
+
+.card-header h2 {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.card-header p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Link Kartçıkları */
+.contact-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f9f9ff;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.contact-link:hover {
+    background: #fff;
+    border-color: #5d3bee;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    color: #5d3bee;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-content {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.link-content span {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.link-content strong {
+    display: block;
+    font-size: 15px;
+    color: #333;
+}
+
+.card-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #bbb;
+    font-size: 13px;
+}
