@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav><br><br>
+
+    <!--Slider yapısı-->
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-10">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/pexels-luisdelrio-15286.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/pexels-therato-3408744.jpg" class="d-block w-100 h-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/pexels-jaime-reimer-1376930-2662116.jpg" class="d-block w-100 h-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/pexels-christian-heitz-285904-842711.jpg" class="d-block w-100 h-100"
+                                alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-2 text-center">
+            <h4>Açıklama</h4>
+            <p>Bu site Bootstrap'i öğrenirken tasarlanmıştır.</p>
+        </div>
+
+    </div>
+
+
+    <!--hazır yapılar-->
+    <div class="container p-5  my-5 border ">
+        <h1>My First Bootstrap Page</h1>
+        <p>This part is inside a .container class.</p>
+        <p>The .container class provides a responsive fixed width container.</p>
+    </div><br>
+
+    <!--grid yapısı-->
+    <div class="container-sm">.container-sm</div>
+    <div class="container-md">.container-md</div>
+    <div class="container-lg">.container-lg</div>
+    <div class="container-xl">.container-xl</div>
+    <div class="container-xxl">.container-xxl</div><br><br>
+
+    <div class="row">
+        <div class="col-sm-4 bg-primary">.col</div>
+        <div class="col-sm-8 bg-black">.col</div>
+    </div><br><br>
+
+    <!--dikeyde-align hizalama -->
+    <div class="container text-center ">
+        <p><b>Align ile dikeyde hizalama</b></p>
+        <div class="row bg-succes align-items-start ">
+            <div class="col bg-secondary">
+                One of three columns
+            </div>
+            <div class="col bg-black">
+                One of three columns
+            </div>
+            <div class="col bg-primary">
+                One of three columns
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container text-center">
+        <div class="row align-items-end">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col bg-secondary align-self-start">
+                One of three columns
+            </div>
+            <div class="col bg-black align-self-center">
+                One of three columns
+            </div>
+            <div class="col bg-primary align-self-end">
+                One of three columns
+            </div>
+        </div>
+    </div><br>
+
+    <!--yatayda-justify hizalama-->
+    <div class="container text-center bg-warning">
+        <p><b>Justify ile yatayda hizalama</b></p>
+        <div class="row justify-content-start">
+            <div class="col-4 bg-primary ">
+                One of two columns
+            </div>
+            <div class="col-4 bg-secondary">
+                One of two columns
+            </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="col-4 bg-primary">
+                One of two columns
+            </div>
+            <div class="col-4 bg-secondary">
+                One of two columns
+            </div>
+        </div><br>
+        <div class="row justify-content-end">
+            <div class="col-4 bg-primary">
+                One of two columns
+            </div>
+            <div class="col-4 bg-secondary">
+                One of two columns
+            </div>
+        </div><br>
+        <div class="row justify-content-around">
+            <div class="col-4 bg-primary">
+                One of two columns
+            </div>
+            <div class="col-4 bg-secondary">
+                One of two columns
+            </div>
+        </div><br>
+        <div class="row justify-content-between">
+            <div class="col-4 bg-primary">
+                One of two columns
+            </div>
+            <div class="col-4 bg-secondary">
+                One of two columns
+            </div>
+        </div><br>
+        <div class="row justify-content-evenly">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div><br>
+    </div><br><br>
+
+    <!--padding ve margin-->
+    <p style="text-align: center;"><b>padding ve margin</b></p>
+    <div class="mx-auto p-5 bg-success" style="width: 150px;">
+        Centered element
+    </div>
+    <div class="mx-auto my-3 px-5 bg-danger" style="width: 150px;">
+        Centered element 2
+    </div><br>
+
+    <!--Alert(bildirim mesajı)-->
+    <div class="alert alert-primary mx-5" role="alert">
+        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-warning p-5" role="alert">
+        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div><br>
+
+    <!--text özellikleri-->
+    <div class="alert alert-warning p-5 text-center text-success text-uppercase fs-5 fw-light" role="alert">
+        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div class="alert alert-warning p-3 text-center text-light text-capitalize fs-6 fw-normal  bg-black" role="alert">
+        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+
+    <!--buton özellikleri-->
+    <div class="container mx-5 my-5">
+        <button type="button" class="btn btn-primary p-3 ">Primary</button>
+        <button type="button" class="btn btn-secondary ">Secondary</button>
+        <button type="button" class="btn btn-success ">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button><br>
+        <hr><br>
+        <button type="button" class="btn btn-outline-success btn-lg">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning" disabled>Warning</button>
+        <div class="d-grid gap-2 mx-auto col-6">
+            <button class="btn btn-primary" type="button">Button</button>
+        </div>
+    </div><br>
+    <hr><br>
+
+    <!--card yapısı-->
+    <h3 class="text-center text-uppercase bg-light"><strong>card yapısı</strong></h3>
+    <div class="container my-3">
+        <div class="row bg-light mb-5 justify-content-between">
+            <div class="col-sm ">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/grs2.jpg" class="card-img-top" alt="profile">
+                    <div class="card-body">
+                        <h5 class="card-title">Fatima inci</h5>
+                        <p class="card-text">Bilgisayar mühendisliği öğrencisiyim. Web üzerinde çalışmalar yapıyor,
+                            kendimi geliştirmek ile uğraşıyorum.</p>
+                        <a href="#" class="btn btn-primary">Profil'e git</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/grs2.jpg" class="card-img-top" alt="profile">
+                    <div class="card-body">
+                        <h5 class="card-title">Fatima inci</h5>
+                        <p class="card-text">Bilgisayar mühendisliği öğrencisiyim. Web üzerinde çalışmalar yapıyor,
+                            kendimi geliştirmek ile uğraşıyorum.</p>
+                        <a href="#" class="btn btn-primary">Profil'e git</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/grs2.jpg" class="card-img-top" alt="profile">
+                    <div class="card-body">
+                        <h5 class="card-title">Fatima inci</h5>
+                        <p class="card-text">Bilgisayar mühendisliği öğrencisiyim. Web üzerinde çalışmalar yapıyor,
+                            kendimi geliştirmek ile uğraşıyorum.</p>
+                        <a href="#" class="btn btn-primary">Profil'e git</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Sütunlar ile responsive tasarım-->
+        <div class="row bg-light">
+            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                <div class="card my-5 ">
+                    <div class="card-header">
+                        <h5>Sosyal Hesaplar</h5>
+
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">İnstagram</a></li>
+                            <li class="list-group-item"><a href="#">Linkedin</a></li>
+                            <li class="list-group-item"><a href="#">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card my-5">
+                    <div class="card-header">
+                        <h5>Günün Sözü</h5>
+
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Belirsizlik</h6>
+                        <p class="card-text">Dün bitti, yarın daha gelmedi, bugün ise henüz belli değil. <br>O yüzden
+                            bugün; elimizden gelenin en iyisini yaparak yaşayalım.</p>
+                        <a href="#" class="btn btn-primary">Beğen</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="card my-5">
+                    <img src="/images/pc2.jpg" class="card-img-top" alt="..." width="100px" height="350px">
+                    <div class="card-body">
+                        <h5 class="card-title">Hedefe adım adım</h5>
+                        <p class="card-text">Başarı, adım adım ilerlemenin sonucudur. Her başarının arkasında, azim ve
+                            çaba saklıdır.</p>
+                        <p class="card-text"><small class="text-body-secondary">Asla vazgeçme!</small></p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <!--Tablo yapısı-->
+        <div class="row bg-light">
+            <table class="table caption-top table-striped table-hover  table-bordered border-primary ">
+                <caption>Tablo-1</caption>
+                <thead class="table-success">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Firstname</th>
+                        <th scope="col">Lastname</th>
+                        <th scope="col">Contact</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider divider-primary">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>@social</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><br>
+
+        <!--list kullanımı-->
+        <div class="row my-5">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark">An item</li>
+                <li class="list-group-item list-group-item-success">A second item</li>
+                <li class="list-group-item list-group-item-light">A third item</li>
+                <li class="list-group-item list-group-item-dark">A fourth item</li>
+                <li class="list-group-item list-group-item-warning">And a fifth one</li>
+            </ul>
+        </div>
+
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                </div>
+                <span class="badge text-bg-primary rounded-pill">10</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                </div>
+                <span class="badge text-bg-primary rounded-pill">8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Subheading</div>
+                    Content for list item
+                </div>
+                <span class="badge text-bg-primary rounded-pill">13</span>
+            </li>
+        </ol>
+
+        <ul class="list-group my-5 list-group-item-primary">
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+            </li>
+        </ul>
+
+        <!--Form kullanımı-->
+
+        <h5 class="text-center">Form</h5><br>
+
+        <form action="">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div id="passwordHelpBlock" class="form-text">
+                            8-20 characters long, contain letters and numbers, not
+                            contain spaces, special characters, or emoji.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">File</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <label for="exampleDataList" class="form-label">Şehir</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="row justify-content-center ">
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Ülke seç</option>
+                        <option value="1">Türkiye</option>
+                        <option value="2">ABD</option>
+                        <option value="3">Almanya</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-0">
+                    <div class="col-sm-8 col-lg-2 mt-0 ">
+                        <h6>Hobiler</h6>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Kitap okumak
+                            </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                            <label class="form-check-label" for="checkChecked">
+                                Spor yapmak
+                            </label>
+                        </div><br>
+                    </div>
+                    <div class="col-sm-8 col-lg-2 mt-0">
+                        <h6>Cinsiyet</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
+                                Kadın
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
+                                Erkek
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div><br>
+
+            <div class="row justify-content-center ">
+                <div class="col-sm-8 col-lg-4 justify-content-end align-self-center">
+                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    <button type="reset" class="btn btn-secondary btn-block">delete</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <br>
+    <hr>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
