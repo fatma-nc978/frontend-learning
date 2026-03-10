@@ -175,25 +175,89 @@
 
 
 
-//binaryden decimale
-let sayi = String(prompt("bir sayı giriniz:"));
-sayi = reverse(sayi);
-let sonuc = binToDec(sayi);
-console.log("sayının decimal hali:", sonuc);
+// //binaryden decimale
+// let sayi = String(prompt("bir sayı giriniz:"));
+// sayi = reverse(sayi);
+// let sonuc = binToDec(sayi);
+// console.log("sayının decimal hali:", sonuc);
 
-function reverse(sayi) {
-    let kelime = "";
-    for (let i = (sayi.length - 1); i >= 0; i--) {
-        kelime += sayi.charAt(i);
-    }
-    return kelime;
-}
+// function reverse(sayi) {
+//     let kelime = "";
+//     for (let i = (sayi.length - 1); i >= 0; i--) {
+//         kelime += sayi.charAt(i);
+//     }
+//     return kelime;
+// }
 
-function binToDec(sayi) {
-    let dec = 0;
-    for (let j = 0; j < sayi.length; j++) {
-        dec += (2 ** j) * Number(sayi.charAt(j));
-    }
-    return dec;
+// function binToDec(sayi) {
+//     let dec = 0;
+//     for (let j = 0; j < sayi.length; j++) {
+//         dec += (2 ** j) * Number(sayi.charAt(j));
+//     }
+//     return dec;
 
-}
+// }
+
+
+
+// //diziler
+
+// let dizi2 = new Array(5.8, 6); //sınıftan nesne yoluyla dizi oluşturma
+// let sayılar = [3, 5, 8, 9, 12];
+// sayılar[sayılar.length - 1] = "fatma";
+// console.log(sayılar[4]);
+// console.log(sayılar);
+
+// let pers1 = {
+//     isim: "fatma",
+//     tc: 2288,
+//     yas: 22,
+// }
+
+// let pers2 = {
+//     isim: "ahmet",
+//     tc: 4486,
+//     yas: 32,
+// }
+
+// let rakamlar = [2, 6];
+// let kullanıcılar = [pers1, pers2, rakamlar];
+// console.log(kullanıcılar);
+// console.log(typeof kullanıcılar);
+// console.log(kullanıcılar[2][1]);
+// console.log(kullanıcılar[0].isim);
+
+// sayılar.forEach(function (sayı) { //foreach döngüsü ile dizi elemanlarını yazdırma
+//     sayı += 2;
+//     console.log(sayı);
+// });
+
+// //dizi metodları
+// sayılar.push(12);
+// sayılar.unshift(1);
+// console.log(sayılar);
+
+// let son = sayılar.pop();
+// console.log(son);
+
+// sayılar.splice(1, 2, 10); //diziye eleman ekleyip çıkarmak için en iyi metod
+// console.log(sayılar);
+// sayılar.splice(0, 0, 300);
+// console.log(sayılar);
+
+// let birleşmiş = sayılar.concat(kullanıcılar, dizi2);
+// console.log(birleşmiş);
+
+// birleşmiş.reverse();
+// console.log(birleşmiş);
+
+// let index = birleşmiş.indexOf("fatma");
+// console.log(index);
+
+// let string = "ayşe,fatma,zeynep";
+// let metinDizi = string.split(","); //bir şeye göre bölüp diziye çevirir.
+// console.log(metinDizi);
+
+// metinDizi = metinDizi.join("--");
+// console.log(metinDizi);
+
