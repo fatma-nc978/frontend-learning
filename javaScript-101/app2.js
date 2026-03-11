@@ -261,3 +261,63 @@
 // metinDizi = metinDizi.join("--");
 // console.log(metinDizi);
 
+
+
+// //string metodları
+// let str = "hoşgeldinn";
+// let str2 = "kurs 2026";
+// let sonuc = str.concat(" ", str2);
+// console.log(sonuc);
+// let buyuk = str.toUpperCase();
+// console.log("büyük hali: ", buyuk);
+// let bosluk = "    fatmanc  ";
+
+// console.log(bosluk.trim());  //stringin sağ ve solundaki boşlukları alır.çok kullanılır.
+
+// console.log(str.slice(0, 3));
+
+// console.log(sonuc.replace("kurs", "eğitim"));
+
+// let ayrılmış = sonuc.split(" ");
+// console.log(ayrılmış);
+
+
+// //Math objesi metodları - Math.özellik() şeklinde kullanılır. abs,sqrt,pow,max,min,PI
+// let sayi = 5.12;
+// console.log(Math.floor(sayi));
+// console.log(Math.ceil(sayi), Math.round(sayi));
+
+// console.log(Math.max(54, 4, 78, 23, 55));
+// console.log("pi değeri: ", Math.PI);
+
+// console.log("rastgele sayı: ", Math.floor(Math.random() * 100));
+
+
+
+// //date objesi metodları
+// let tarih = new Date(); //nesne oluşturularak kullanılır.
+// let doğum = new Date(2003, 8, 18, 17, 50, 20, 30);
+// console.log("doğum tarihi: ", doğum);
+// console.log(tarih);
+// console.log(tarih.toLocaleDateString(), tarih.toLocaleTimeString()); //en çok kullanılanlar
+// console.log(tarih.getFullYear(), tarih.getMonth() + 1, tarih.getDate()); //get metodları ile veri alınır.
+// console.log(tarih.getDay(), tarih.getHours(), ":", tarih.getMinutes());
+
+// tarih.setDate(18), tarih.setHours(14); //set ile değişiklikler yapılır.
+// tarih.setMinutes(tarih.getMinutes() + 30);
+// console.log(tarih.toLocaleDateString(), tarih.toLocaleTimeString());
+
+
+// //primitive ve referans veri tipleri
+// let a = "fatma";  //string - ilkel(value) tipi
+// let b = a;  //değer bazlı atama
+// console.log(a, b);
+// b = "sema";
+// console.log(a, b);  //b'de yapılan değişiklik a'yı etkilemez!
+
+// let x = [1, 5, 13, 8];  //referans veri tipi
+// let y = x;  //adres bazlı atama
+// console.log(x, y);
+// y.push(88);
+// console.log(x, y);  //yde yapılan değişiklik x'i de etkiler çünkü ikisinin de baktığı adres aynı!
+
