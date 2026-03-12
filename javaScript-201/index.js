@@ -67,3 +67,114 @@ buttons.forEach(function (but) {
 const linkler = document.querySelectorAll("#clearButton");
 console.log(linkler);
 
+
+// //style kullanımı
+// const buttons = document.querySelectorAll(".btn");
+// const button1 = document.querySelectorAll(".btn")[0];
+// const button2 = document.querySelector("#clearButton");
+// const forms = document.querySelectorAll("form")[0];
+
+
+
+// console.log(button1);
+// button1.style.backgroundColor = "black";
+// button1.style.padding = "10px";
+// button1.style.fontWeight = "700";
+// button1.style.marginTop = "15px";
+
+// console.log(buttons);
+// console.log(button2);
+// button2.style.backgroundColor = "red";
+// button2.style.padding = "10px";
+// button2.style.fontWeight = "700";
+
+
+// //parent-child ilişkisi
+// const ebv = document.querySelector(".card");
+// const çck = document.querySelectorAll("form");
+// const çck2 = document.querySelectorAll("input")[0];
+// const çck3 = document.querySelector(".btn");
+
+// console.log(ebv);
+// console.log(çck);
+// console.log(çck2);
+// console.log(çck3);
+
+// console.log(ebv.children);  //anneden çocuklara erişmek(children)
+// ebv.children[0].textContent = "TODO LİST SAYFASI";
+// ebv.children[0].style.fontWeight = "700";
+
+// const dizi = Array.from(ebv.children);
+// dizi.forEach(function (i) {
+//     console.log(i);
+//     //console.log(i.textContent);
+// })
+
+// //anneye erişmek(parentElement)
+// const bul1 = çck2.parentElement;
+// const bul2 = çck3.parentElement;
+// const bul3 = çck3.parentElement.parentElement;
+// console.log(çck2);
+// console.log(bul1);
+// console.log(bul2);
+// console.log(bul3);
+
+// const krd = çck2.nextElementSibling;//sonraki kardeşine erişmek
+// console.log(çck2);
+// console.log(krd);
+
+// const ull = document.querySelector(".card").children[3].children[2];
+// console.log(ull);
+// const ullk = ull.nextElementSibling;
+// console.log(ullk);
+// const ullkk = ullk.nextElementSibling; //sonrasında kardeş yok
+// console.log(ullkk);
+
+
+// //element oluşturma ve ekleme
+// const links = document.querySelectorAll(".list-group")[0];
+// console.log(links);
+
+// const link = document.createElement("li");
+// const al = document.createElement("a");
+// const il = document.createElement("i");
+// links.appendChild(link);
+
+// link.className = "list-group-item d-flex justify-content-between";
+// link.innerHTML = "Todo 2";
+// al.href = "#";
+// al.className = "delete-item";
+// il.className = "fa fa-remove";
+// al.appendChild(il);
+// link.appendChild(al);
+// console.log(link);
+// console.log(al);
+
+// //buton ekleme
+// const cardbody = document.querySelectorAll(".card-body")[0];//eklenicek yeri ayarlama
+// const form = cardbody.children[0];
+// console.log(form);
+
+// const button2 = document.createElement("button"); //element oluşturma
+// button2.id = "todoAddButton";
+// button2.type = "submit";
+// button2.className = "btn btn-primary mt-4 btn-sm";
+// button2.innerHTML = "Ekle";
+
+// form.appendChild(button2); //ekleme
+
+
+// //remove() ile element silme
+// const todo1 = document.querySelectorAll(".list-group-item")[0];
+// console.log(todo1);
+// todo1.remove();
+
+// //replaceChild() ile yer değiştirme
+// const cardbodyy = document.querySelectorAll(".card-body")[1];
+
+// const h4 = document.createElement("h4");
+// h4.className = "card-title";
+// h4.innerHTML = "TODO LİSTESİ";
+// h4.style.color = "red";
+
+// cardbodyy.replaceChild(h4, cardbodyy.childNodes[1]);
