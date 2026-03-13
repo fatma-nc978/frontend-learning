@@ -178,3 +178,88 @@ console.log(linkler);
 // h4.style.color = "red";
 
 // cardbodyy.replaceChild(h4, cardbodyy.childNodes[1]);
+
+
+
+// //EVENTS
+// //html taglarının içinde direkt yazılabilir veya orada metot olarak yazılabilir.
+// function changeTitle() {
+//     document.querySelector("#clearButton").textContent = "Değişti..";
+// }
+
+// //!en çok kullanılan olan : addEventListener() ile yakaladığına birden fazla eventler atanabilir.
+// const buton1 = document.querySelector("#todoAddButton"); //element seçme
+// console.log(buton1);
+
+// buton1.addEventListener("click", butonDegis); //ilk eventi ekleme (on'suz event,ne çağrılıcağı)
+// function butonDegis(e) {
+//     buton1.textContent = "Todo eklendi!";
+//     console.log(e.type); //her event'te bir obje döner.ve o objeye parametre ile erişebiliriz.
+//     console.log(e.target);
+//     console.log(e.target.className);
+// }
+
+// buton1.addEventListener("mouseover", renkDegis); //2.eventi ekleme
+// function renkDegis() {
+//     buton1.style.backgroundColor = "black";
+// }
+
+// //  sayfa eventları
+// window.addEventListener("load", run);
+// function run() {
+//     console.log("window(sayfa) yüklendi");
+// }
+// document.addEventListener("DOMContentLoaded", load);
+// function load() {
+//     console.log("Document(sayfa içeriği) yüklendi!");
+// }
+
+// //  Mouse eventları
+// //click , dblclick eventi
+// const pTitle = document.querySelectorAll(".card-title")[1];
+// pTitle.addEventListener("dblclick", ciftTık);
+// function ciftTık(e) {
+//     pTitle.style.color = "red";
+//     console.log(e.type);
+// }
+
+// //mouseenter , mouseleave --  mouse ile üzerine geldiğinde ve çıktığında
+// const formBg = document.querySelectorAll(".card-body")[1];
+// console.log(formBg);
+
+// formBg.addEventListener("mouseenter", formBgEkle);
+// formBg.addEventListener("mouseleave", formBgKaldır);
+
+// function formBgEkle(e) {
+//     formBg.style.backgroundColor = "gray";
+//     console.log(e.type);
+// }
+
+// function formBgKaldır(e) {
+//     formBg.style.backgroundColor = "#fff";
+//     console.log(e.type);
+// }
+
+
+// //klavye eventları -- keydown , keyup
+// const inp = document.querySelector("#todoName");
+// console.log(inp);
+
+// inp.addEventListener("keyup", klavyeBas);
+
+// function klavyeBas(e) {
+//     let input = e.target.value;
+//     console.log(input);
+//     if (input[0] != "" && !isNaN(input[0])) {  // isNaN() = sayı değilse
+//         alert("Sayı ile başlayamazsınız!");
+//     }
+// }
+
+// //input eventları  -- focus , blur , copy , paste , cut , select gibi input içi kayıtlar tutulur.
+// inp.addEventListener("paste", inpPaste);
+
+// function inpPaste(e) {
+//     e.preventDefault(); //!yapılan davranışı iptal eder.burda ise yapıştırılan input silinir , gözükmez.
+//     console.log(e.type);
+//     alert("kopyala-yapıştır yapmayınız , elle giriniz!");
+// }
