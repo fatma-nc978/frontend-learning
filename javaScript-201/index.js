@@ -263,3 +263,39 @@ console.log(linkler);
 //     console.log(e.type);
 //     alert("kopyala-yapıştır yapmayınız , elle giriniz!");
 // }
+
+console.clear();
+
+//web depolayıcıları: local ve session storage 
+//sessionStorage : oturum depolama    ---  tarayıcı kapanınca veriler silinir.her şeyi string olarak tutar.
+sessionStorage.setItem(2288, "Fatima"); //ekleme
+sessionStorage.setItem(1, "lavinia");
+sessionStorage.removeItem("3");           //silme
+//sessionStorage.clear();
+let value = sessionStorage.getItem("1");  //ulaşma
+if (value == null) {
+    console.log("değer bulunamadı!");
+}
+else {
+    console.log("değer bulundu:", value);
+}
+
+let dizi1 = ["fatma", 22, "lavinia", 4, "kalp"];
+sessionStorage.setItem("dizi", JSON.stringify(dizi1)); //diziyi string olarak değil de dizi olarak eklemesi için.
+
+let val = sessionStorage.getItem("dizi"); //diziye string olarak erişir.
+console.log(typeof val, val);
+let val2 = JSON.parse(sessionStorage.getItem("dizi")); //diziye erişirken de string olarak değil de dizi olarak erişmek için.
+console.log(typeof val2, val2);
+
+
+//localStorage -- veriler tarayıcı kapansa dahi silinmez.tek farkı budur.
+let dizi2 = ["az", 10, "veya çok", 100, "fark etmez!!"];
+localStorage.setItem("dizim", JSON.stringify(dizi2));
+let diz = JSON.parse(localStorage.getItem("dizim"));
+console.log(diz);
+diz.forEach(function (i) {
+    console.log(i);
+})
+
+
