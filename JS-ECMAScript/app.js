@@ -129,3 +129,73 @@ yazdır2("zelal", "inci");
 
 
 
+//OOP - nesneye yönelik pr.
+class insan {
+
+    constructor(isim, soyisim, yas, maas) { //değişkenler const. da eklenince tanımlanmış gibi olur.
+        this.isim = isim;
+        this.soyisim = soyisim;
+        this.yas = yas;
+        this.maas = maas;
+    }
+
+    yazdır() {  //metotlar böyle
+        console.log(`isim:${this.isim}  soyad:${this.soyisim} yas:${this.yas} maas:${this.maas}`);
+    }
+
+    static yasDegistir(yas2) {
+        this.yas = yas2;
+        console.log("yeni yasınız:", this.yas);
+    }
+}
+
+const insan1 = new insan("fatma", "inci", 22, 8000);  //nesne oluşturma
+insan1.yazdır();
+insan1.maas = 10000;
+//insan1.yasDegistir(18);  hata verir.
+console.log("yeni maas:", insan1.maas);
+
+insan.yasDegistir(25); //! static'e erişirken nesne oluşturulmaz.class adı üzerinden erişilir.
+
+
+//inheritance(miras alma)
+class ogrenci extends insan {
+    isim = "ayse";
+    soyisim = "demir";
+    yas;
+    maas;
+    write() {
+        console.log("üst sınıftan:");
+        yazdır();
+    }
+}
+
+const ogr = new ogrenci();
+ogr.write();
+
+
+class person {
+    constructor(ad, soyad, tc) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.tc = tc;
+    }
+
+    write() {
+        console.log("isim:", this.ad, "soyad:", this.soyad, "tc:", this.tc);
+    }
+}
+
+class kull extends person {
+    constructor(ad, soyad, tc) {
+        super(ad, soyad, tc); //miras aldığı sınıfın constr.ını çağırır.
+    }
+    write() {
+        super.write();
+    }
+}
+
+const kull1 = new kull("fatma", "inci", 228864);
+kull1.write();
+
+
