@@ -11,7 +11,8 @@ export const dizi = [   //başka companent tarafından erişilebilir oldu.
     }
 ]
 
-function Login() {
+function Login(props) {
+    const { children } = props;
     return (
         <>
             <div style={{ width: "100%", height: "200px", backgroundColor: "lightgray", color: "black" }}>
@@ -27,6 +28,10 @@ function Login() {
                     <input type="text" />
                 </div>
                 <button>kaydet</button>
+            </div>
+            <hr />
+            <div>
+                container 2 için: {children}
             </div>
         </>
     )

@@ -5,7 +5,7 @@ import App from './App.jsx'  //companenti dahil etme
 
 
 createRoot(document.getElementById('root')).render(  //index.htmldeki root id'li div'i render ediyor.
-  <StrictMode>
+  <>
     <App />
-  </StrictMode>,
+  </>,
 )
