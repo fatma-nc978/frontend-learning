@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "isim": "fatma",
+      "soyisim": "inci",
+      "id": "1234"
+    },
+    {
+      "isim": "ömer",
+      "soyisim": "inci",
+      "id": "5623"
+    },
+    {
+      "isim": "umut",
+      "soyisim": "soylu",
+      "id": "7684"
+    },
+    {
+      "isim": "oruç",
+      "soyisim": "gelen",
+      "id": "rfmIYCHVz8E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
